@@ -105,20 +105,22 @@ section {
 
 .feature img {
   width: 100%;
-  max-width: 300px;
+  max-width: 100%;
+  height: auto;
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
 .screenshots {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  display: flex;
   gap: 20px;
+  justify-content: space-between;
   margin-top: 40px;
 }
 
 .screenshots img {
   width: 100%;
+  max-width: 100%;
   height: auto;
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
@@ -133,6 +135,7 @@ footer {
   font-size: 0.9rem;
   border-top: 3px solid #007bff;
 }
+
 .fade-in {
   opacity: 1;
   transform: translateY(0);
